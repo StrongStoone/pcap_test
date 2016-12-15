@@ -39,9 +39,9 @@ void dispatcher_handler(u_char *, const struct pcap_pkthdr *, const u_char *);
 
 int main(int argc, char **argv)
 {
-pcap_t *fp;
-char errbuf[PCAP_ERRBUF_SIZE];
-char source[PCAP_BUF_SIZE];
+  pcap_t *fp;
+  char errbuf[PCAP_ERRBUF_SIZE];
+  char source[PCAP_BUF_SIZE];
 
   fp = pcap_open_offline("tcpex.pcap", errbuf);
   if (fp == NULL) {
